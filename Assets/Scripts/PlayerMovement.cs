@@ -33,7 +33,7 @@ namespace Doodle.core
         {
             _isGrounded = Physics2D.Raycast(_playerRigidbody.position, Vector2.down, _distanceForCast, _groundMask);
             Debug.DrawLine(_playerRigidbody.position, _playerRigidbody.position + Vector2.down * _distanceForCast, Color.red);
-        } 
-        
+        }
+        public static bool IsGrounded { get { return _isGrounded; } }
     }
 }
