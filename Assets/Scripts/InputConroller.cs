@@ -1,6 +1,4 @@
-
 using UnityEngine;
-
 namespace Doodle.core
 {
     public class InputController : MonoBehaviour
@@ -8,7 +6,6 @@ namespace Doodle.core
         [SerializeField] Rigidbody2D _player;
         private static bool _isJumped = false;
         private static float _direction;
-
 
         public void Update()
         {
